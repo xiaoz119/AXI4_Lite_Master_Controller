@@ -6,9 +6,9 @@ The HDL design for AXI4_Lite master controller to driven the AXI4 based Xilinx I
 ## Controller Instruction Set
 ### 🧠 Instruction Format Overview
 
-Bit:   [31      27] [26     20] [19      12] [11       3] [2      0]
-Field: [ RESERVED ] [  COUNT  ] [ADDR_LOCAL] [ ADDR_AXI ] [ OPCODE ]
-        ←5 bits→     ←7 bits→    ←8 bits→     ←9 bits→     ←3 bits→
+| Bit Range  | 31–27       | 26–20     | 19–12       | 11–3        | 2–0      |
+|------------|-------------|-----------|-------------|-------------|----------|
+| Field Name | `RESERVED`  | `COUNT`   | `ADDR_LOCAL`| `ADDR_AXI`  | `OPCODE` |
         
 Each instruction is exactly 32 bits, structured as follows:
 
